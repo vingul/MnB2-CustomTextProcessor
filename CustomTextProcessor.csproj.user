@@ -6,7 +6,7 @@
     <GameBinariesFolder Condition="Exists('$(GameFolder)\bin\Gaming.Desktop.x64_Shipping_Client\Bannerlord.exe')">Gaming.Desktop.x64_Shipping_Client</GameBinariesFolder>
     <StartAction>Program</StartAction>
     <StartProgram>$(GameFolder)\bin\$(GameBinariesFolder)\Bannerlord.exe</StartProgram>
-    <StartArguments>/singleplayer _MODULES_*Native*SandBoxCore*CustomBattle*Sandbox*StoryMode*$(ModuleName)*Community Ukrainization*_MODULES_</StartArguments>
+    <StartArguments>/singleplayer _MODULES_%2aNative%2aMultiplayer%2aSandBoxCore%2aCustomBattle%2aSandbox%2aStoryMode%2aCommunity Ukrainization%2a_MODULES_</StartArguments>
     <StartWorkingDirectory>$(GameFolder)\bin\$(GameBinariesFolder)</StartWorkingDirectory>
   </PropertyGroup>
 </Project>

@@ -40,7 +40,14 @@ namespace CustomTextProcessor
         {
             affixes.Add(affixObj);
         }
-
+        public void PrependAffix(Suffix affixObj)
+        {
+            affixes.Insert(0, affixObj);
+        }
+        public override string ToString()
+        {
+            return $"[M: \"{match}\" - NM: \"{neg_match}\"]";
+        }
         public List<Suffix> GetAffixes()
         {
             return affixes;

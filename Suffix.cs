@@ -31,6 +31,11 @@ namespace CustomTextProcessor
             return replaced;
         }
 
+        public override string ToString()
+        {
+            return $"[\"{fromm}\" -> \"{to}\"]";
+        }
+
         private static string Convert0(string part) => part.Equals("0") ? "" : part;
     }
 }
